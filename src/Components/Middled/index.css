@@ -1,0 +1,143 @@
+
+.services-container {
+    padding: 20px;
+    text-align: center;
+    background: #151515;
+    border-radius: 10px;
+  }
+
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .right {
+    flex: 1;
+  }
+  
+  .small-text {
+    font-size: 16px;
+    color: #fff;
+    padding: 0.67rem 0;
+  }
+  
+  .small-text::before {
+    content: "•";
+    margin-right: 5px;  
+    color: #999;      
+  }
+  
+  .main-text {
+    font-size: 32px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      flex-direction: column; 
+    }
+  
+    .service-box {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left, .right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .main-text {
+      font-size: 24px;
+    }
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px; 
+  }
+  
+  .service-box {
+    flex: 1 1 calc(33.33% - 20px); 
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    color: white;
+    text-align: left;
+    position: relative;
+    min-width: 300px; 
+  }
+  
+  .service-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #aaa;
+  }
+  
+  .arrow-icon {
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #999;
+  }
+  
+  .service-header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .services-container-box {
+    padding: 3rem;
+    background-color: black;
+  }
+  .service-arrow {
+    width: 30%;
+      display: flex;
+      margin-top: 1rem;
+      justify-content: right;
+  }
+  .brand-identity {
+    background-color: #4a56f0;
+  }
+  
+  .brand-identity h2 {
+    color: white;
+  }
+  
+  .brand-identity p {
+    color: #ddd;
+    
+  }
+  
+  .arrow-icon {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .brand-identity p , .service-box p {
+    text-align: left;
+      margin-top: 4rem;
+  }

@@ -1,0 +1,65 @@
+:root {
+    --dark-bg: #333;
+    --light-bg: #555;
+    --primary-color: #6200EE;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: var(--dark-bg);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header p {
+    text-align: center;
+    max-width: 600px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.profile {
+    background-color: var(--light-bg);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.large {
+    background-color: var(--primary-color);
+    width: 400px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: black;
+    display: inline-block;
+}

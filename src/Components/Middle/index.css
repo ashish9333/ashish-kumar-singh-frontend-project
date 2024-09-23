@@ -1,0 +1,63 @@
+.ribbon-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .ribbon {
+    position: absolute;
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 12px 0;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .ribbon-back {
+    top: 22%;
+    left: -50%;
+    transform: rotate(-3deg);
+    background-color: #171717;
+    z-index: 1;
+    opacity: 0.5;
+  }
+  
+  .ribbon-front {
+    top: 23%;
+    left: -50%;
+    transform: rotate(4deg);
+    background-color: #4034EB;
+    z-index: 2;
+  }
+  
+  .marquee {
+    display: flex;
+    overflow: hidden; 
+    width: 100%; 
+  }
+  
+  .scroll-content {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite; 
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .text {
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .diamond {
+    font-size: 1.2rem;
+    color: white;
+  }
